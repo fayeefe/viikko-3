@@ -25,11 +25,12 @@ public class Safe {
         {
 
             safeFolder.forEach(System.out::println);
+            return safeFolder;
         }
         else 
         {
             System.out.println("Väärä PIN-koodi!");
+            return null;
         }
-        return safeFolder;
     }
 }
