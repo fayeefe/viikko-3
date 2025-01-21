@@ -13,7 +13,7 @@ public class App {
     }
 
     public static void main(String[] args) {
-        Safe safe = new Safe();
+        Safe safe = new Safe("0000");
         Scanner scanner = new Scanner(System.in);
 
         while (true)
@@ -25,13 +25,16 @@ public class App {
                     safe.setPin(scanner.next());
                     break;
                 case "2":
-                    safe.addArrayComp(scanner);
+                    System.out.println("Anna PIN-koodi");
+                    safe.addArrayComp(scanner.next());
                     break;
                 case "3":
-                    safe.printArrayContents(scanner);
+                    System.out.println("Anna PIN-koodi"); 
+                    safe.printArrayContents(scanner.next());
                     break;
                 case "0":
                     System.out.println("Kiitos ohjelman käytöstä.");
+                    scanner.close();
                     System.exit(0);
                     break;
                 default:

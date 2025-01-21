@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Safe {
+    public Safe(String pinCode){}
     private String pinCode = "0000";
     private ArrayList<String> safeFolder = new ArrayList<>();
+    Scanner scanner = new Scanner(System.in);
 
     public void setPin(String newPin)
     {
@@ -13,10 +15,8 @@ public class Safe {
         this.pinCode = newPin;
     }
 
-    public void addArrayComp(Scanner scanner)
+    public void addArrayComp(String givenPin)
     {
-        System.out.println("Anna PIN-koodi");
-        String givenPin = scanner.next(); 
         if (givenPin.equals(pinCode) == true)
         {
             safeFolder.add(scanner.next());
@@ -28,10 +28,8 @@ public class Safe {
         
     }
 
-    public void printArrayContents(Scanner scanner)
+    public void printArrayContents(String givenPin)
     {
-        System.out.println("Anna PIN-koodi 3");
-        String givenPin = scanner.next(); 
         if (givenPin.equals(pinCode) == true)
         {
             for (String string : safeFolder) {
