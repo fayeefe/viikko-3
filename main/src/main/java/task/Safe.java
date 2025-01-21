@@ -11,7 +11,6 @@ public class Safe {
 
     public void setPin(String newPin)
     {
-        System.out.println(pinCode);
         this.pinCode = newPin;
     }
 
@@ -19,6 +18,7 @@ public class Safe {
     {
         if (givenPin.equals(pinCode) == true)
         {
+            System.out.println("Anna kansioon lisättävä tieto:");
             safeFolder.add(scanner.next());
         }
         else 

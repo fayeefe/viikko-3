@@ -22,15 +22,15 @@ public class App {
             switch (scanner.nextLine()) {
                 case "1":
                     System.out.println("Anna uusi PIN-koodi:");
-                    safe.setPin(scanner.next());
+                    safe.setPin(scanner.nextLine());
                     break;
                 case "2":
                     System.out.println("Anna PIN-koodi");
-                    safe.addArrayComp(scanner.next());
+                    safe.addArrayComp(scanner.nextLine());
                     break;
                 case "3":
                     System.out.println("Anna PIN-koodi"); 
-                    safe.printArrayContents(scanner.next());
+                    safe.printArrayContents(scanner.nextLine());
                     break;
                 case "0":
                     System.out.println("Kiitos ohjelman käytöstä.");
