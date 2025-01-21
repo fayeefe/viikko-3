@@ -30,6 +30,6 @@ public class Safe {
         {
             System.out.println("Väärä PIN-koodi!");
         }
-        return new ArrayList<String>();
+        return safeFolder;
     }
 }
