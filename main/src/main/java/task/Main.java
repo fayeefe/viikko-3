@@ -12,11 +12,6 @@ public class Main {
         System.out.println("0) Lopeta ohjelma");
     }
 
-    public static void SetPin(Safe safe)
-    {
-
-    }
-
     public static void main(String[] args) {
         Safe safe = new Safe();
         Scanner scanner = new Scanner(System.in);
@@ -40,7 +35,7 @@ public class Main {
                     System.exit(0);
                     break;
                 default:
-                    System.out.println("Väärä valinta, koita uudelleen");
+                    System.out.println("Väärä valinta, koeta uudelleen");
                     break;
             }
         }
