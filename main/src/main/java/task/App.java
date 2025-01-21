@@ -29,7 +29,7 @@ public class App {
                     safe.addArrayComp(scanner.nextLine());
                     break;
                 case "3":
-                    System.out.println("Anna PIN-koodi"); 
+                    System.out.println("Anna PIN-koodi:"); 
                     safe.printArrayContents(scanner.nextLine());
                     break;
                 case "0":
