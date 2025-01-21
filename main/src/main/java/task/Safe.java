@@ -19,17 +19,18 @@ public class Safe {
             safeFolder.add(addedString);       
     }
 
-    public void printListContents(String givenPin)
+    public ArrayList<String> printListContents(String givenPin)
     {
         if (givenPin.equals(pinCode) == true)
         {
             for (String string : safeFolder) {
-                System.out.println(string);
+                System.out.println(string);                
             }
         }
         else 
         {
             System.out.println("Väärä PIN-koodi!");
         }
+        return new ArrayList<String>();
     }
 }
