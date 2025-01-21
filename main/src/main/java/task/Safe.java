@@ -23,9 +23,8 @@ public class Safe {
     {
         if (givenPin.equals(pinCode) == true)
         {
-            for (String string : safeFolder) {
-                System.out.println(string);                
-            }
+
+            safeFolder.forEach(System.out::println);
         }
         else 
         {
