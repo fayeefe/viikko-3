@@ -19,7 +19,7 @@ public class Main {
         while (true)
         {
             menuPrint();
-            switch (scanner.next()) {
+            switch (scanner.nextLine()) {
                 case "1":
                     System.out.println("Anna uusi PIN-koodi:");
                     safe.setPin(scanner.next());
