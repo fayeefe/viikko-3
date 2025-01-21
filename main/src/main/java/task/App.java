@@ -30,7 +30,7 @@ public class App {
                     break;
                 case "3":
                     System.out.println("Anna PIN-koodi:"); 
-                    safe.printArrayContents(scanner.nextLine());
+                    safe.printListContents(scanner.nextLine());
                     break;
                 case "0":
                     System.out.println("Kiitos ohjelman käytöstä.");

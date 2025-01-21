@@ -19,7 +19,7 @@ public class Safe {
             safeFolder.add(addedString);       
     }
 
-    public void printArrayContents(String givenPin)
+    public void printListContents(String givenPin)
     {
         if (givenPin.equals(pinCode) == true)
         {
