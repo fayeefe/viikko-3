@@ -25,7 +25,7 @@ public class App {
                     safe.setPin(scanner.nextLine());
                     break;
                 case "2":
-                    System.out.println("Anna PIN-koodi");
+                    System.out.println("Anna kansioon lisättävä tieto:");
                     safe.addArrayComp(scanner.nextLine());
                     break;
                 case "3":

@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Safe {
     public Safe(String pinCode){}
-    private String pinCode = "0000";
+    String pinCode = "0000";
     private ArrayList<String> safeFolder = new ArrayList<>();
     Scanner scanner = new Scanner(System.in);
 
@@ -14,18 +14,9 @@ public class Safe {
         this.pinCode = newPin;
     }
 
-    public void addArrayComp(String givenPin)
+    public void addArrayComp(String addedString)
     {
-        if (givenPin.equals(pinCode) == true)
-        {
-            System.out.println("Anna kansioon lisättävä tieto:");
-            safeFolder.add(scanner.next());
-        }
-        else 
-        {
-            System.out.println("Väärä PIN-koodi!");
-        }
-        
+            safeFolder.add(addedString);       
     }
 
     public void printArrayContents(String givenPin)
